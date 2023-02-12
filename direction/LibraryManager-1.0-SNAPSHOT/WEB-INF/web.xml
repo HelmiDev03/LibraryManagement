@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>LibraryManager</display-name>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/WEB-INF/View/error_500.jsp</location>
+  </error-page>
+  <servlet>
+    <servlet-name>dashboard</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.DashboardServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>dashboard</servlet-name>
+    <url-pattern>/LibraryManager/dashboard</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>emprunt_add</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.EmpruntAddServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>emprunt_add</servlet-name>
+    <url-pattern>/LibraryManager/emprunt_add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>emprunt_list</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.EmpruntListServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>emprunt_list</servlet-name>
+    <url-pattern>/LibraryManager/emprunt_list</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>emprunt_return</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.EmpruntReturnServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>emprunt_return</servlet-name>
+    <url-pattern>/LibraryManager/emprunt_return</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>livre_add</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.LivreAddServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>livre_add</servlet-name>
+    <url-pattern>/LibraryManager/livre_add</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>membre_add</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.MembreAddServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>membre_add</servlet-name>
+    <url-pattern>/LibraryManager/membre_add</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>membre_list</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.MembreListServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>membre_list</servlet-name>
+    <url-pattern>/LibraryManager/membre_list</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>livre_list</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.LivreListServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>livre_list</servlet-name>
+    <url-pattern>/LibraryManager/livre_list</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>livre_delete</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.LivreDeleteServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>livre_delete</servlet-name>
+    <url-pattern>/LibraryManager/livre_delete</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>membre_delete</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.MembreDeleteServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>membre_delete</servlet-name>
+    <url-pattern>/LibraryManager/membre_delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>membre_details</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.MembreDetailsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>membre_details</servlet-name>
+    <url-pattern>/LibraryManager/membre_details</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>livre_details</servlet-name>
+    <servlet-class>LibraryManager.com.ensta.librarymanager.servlet.LivreDetailsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>livre_details</servlet-name>
+    <url-pattern>/LibraryManager/livre_details</url-pattern>
+  </servlet-mapping>
+</web-app>
